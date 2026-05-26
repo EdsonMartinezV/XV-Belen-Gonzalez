@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'gandhi-serif';
+    src: url('GandhiSerif-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    background-image: url('bg.avif'), url('bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div {
+    font-family: 'gandhi-serif', serif;
+    font-size: 1.25rem;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 43dvh;
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  /* margin: 0 20px; */
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  text-align: center;
+  width: 0;
+  background : #7a2936;
+  height: 2px;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+a:first-of-type:before {
+  left: 55%;
+  animation: 3s underline1 infinite;
+}
+
+a:nth-of-type(2):before {
+  left: 51%;
+  animation: 3s underline2 infinite;
+}
+
+a:last-of-type:before {
+  left: 46%;
+  animation: 3s underline3 infinite;
+}
+
+/* a:hover:before {
+  width: 30%;
+} */
+
+p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+}
+
+.gradient-text {
+    background: radial-gradient(circle, #442733, #7a2936);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-bottom: 1px;
+}
+
+@keyframes underline1 {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 31%;
+    }
+    50% {
+        width: 0%;
+    }
+}
+
+@keyframes underline2 {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 38%;
+    }
+    50% {
+        width: 0%;
+    }
+}
+
+@keyframes underline3 {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 34%;
+    }
+    50% {
+        width: 0%;
+    }
+}
